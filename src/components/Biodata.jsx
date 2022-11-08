@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Biodata({ data }) {
   const {
+    নাম,
     id,
     বয়স,
     পেশা,
@@ -9,7 +10,6 @@ export default function Biodata({ data }) {
     দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান,
   } = data;
 
-  //   const [name, setName] = useState(নাম);
   const [idState, setId] = useState(id);
   const [boyos, setBoyos] = useState(বয়স);
   const [pesha, setPesh] = useState(পেশা);
@@ -79,6 +79,7 @@ export default function Biodata({ data }) {
           }}
         >
           <div>
+            নাম- <input type="text" className="Input" value={নাম} readOnly />
             <br />
             ID{" "}
             <input
