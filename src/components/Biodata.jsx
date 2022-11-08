@@ -10,7 +10,7 @@ export default function Biodata({ data }) {
     দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান,
   } = data;
 
-  const [idState, setId] = useState(id);
+//   const [idState, setId] = useState(id);
   const [boyos, setBoyos] = useState(বয়স);
   const [pesha, setPesh] = useState(পেশা);
   const [study, setStudy] = useState(শিক্ষাগতযোগ্যতা);
