@@ -3,14 +3,14 @@ import { useState } from "react";
 export default function Biodata({ data }) {
   const {
     নাম,
-//     id,
+    id,
     বয়স,
     পেশা,
     শিক্ষাগতযোগ্যতা,
     দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান,
   } = data;
 
-//   const [idState, setId] = useState(id);
+  const [idState, setId] = useState(id);
   const [boyos, setBoyos] = useState(বয়স);
   const [pesha, setPesh] = useState(পেশা);
   const [study, setStudy] = useState(শিক্ষাগতযোগ্যতা);
@@ -40,8 +40,7 @@ export default function Biodata({ data }) {
                   `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${fileName}.json`,
                   {
                     method: "PATCH",
-                    body: JSON.stringify({
-                      id: idState,
+                    body: JSON.stringify({                     
                       বয়স: boyos,
                       পেশা: pesha,
                       শিক্ষাগতযোগ্যতা: study,
