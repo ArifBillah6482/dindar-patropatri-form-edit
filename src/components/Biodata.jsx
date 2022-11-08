@@ -80,6 +80,8 @@ export default function Biodata({ data }) {
           <div>
             নাম- <input type="text" className="Input" value={নাম} readOnly />
             <br />
+               ID: <input type="text" className="Input" value={id} readOnly />
+            <br />
            
             বয়স{" "}
             <input
