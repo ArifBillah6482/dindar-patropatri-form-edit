@@ -4,9 +4,10 @@
   margin: 10px;
   width: max-content;
   border: none;
+  background-color: rgb(230, 230, 230);
 }
 .Btn {
-  padding: 5px 10px;
+  padding: 5px 20px;
   background-color: blueviolet;
   border: none;
   outline: none;
@@ -16,10 +17,10 @@
   cursor: pointer;
   margin-top: 20px;
   margin-left: 10px;
-  border-radius: 5px 10px;
-}
-.Btn:nth-child(3) {
-  box-shadow: 0 0 5px red;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: purple;
+  /* background: linear-gradient(to top, blue, purple); */
 }
 .Btn:hover {
   background-color: rgb(182, 182, 182);
