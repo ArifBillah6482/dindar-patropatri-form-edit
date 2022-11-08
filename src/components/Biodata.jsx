@@ -72,7 +72,7 @@ export default function Biodata({ data }) {
       <div>
         <div
           style={{
-            backgroundColor: "blueviolet",
+            background: "linear-gradient(to top,  purple, blue) ",
             padding: "10px",
             borderRadius: "7px",
             boxShadow: "0 0 10px black",
@@ -111,7 +111,7 @@ export default function Biodata({ data }) {
               value={study}
               onChange={(e) => setStudy(e.target.value)}
             />{" "}
-            <br />
+            <br /> <br />
             দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান{" "}
             <input
               type="text"
@@ -124,7 +124,6 @@ export default function Biodata({ data }) {
           <button className="Btn" onClick={SaveData}>
             Update
           </button>{" "}
-          <button className="Btn">Delete</button>
         </div>
       </div>
     </div>
