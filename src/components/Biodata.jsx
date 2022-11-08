@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export default function Biodata({ data }) {
   const {
-    // নাম,
     id,
     বয়স,
     পেশা,
@@ -31,8 +30,9 @@ export default function Biodata({ data }) {
           const datas = [];
           for (let key in respone) {
             datas.unshift({ ...respone[key] });
+            // eslint-disable-next-line
             datas.map((data) => {
-              if (data.id == id) {
+              if (data.id === id) {
                 let fileName1 = data.নাম.split(/\W/g);
                 let fileName2 = data.মোবাইল.split(/\D/g);
                 let fileName = fileName1 + "" + fileName2;
