@@ -30,7 +30,7 @@ export default function AllBiodata() {
               flexDirection: "row",
               flexWrap: "wrap",
               padding: "10px",
-              margin: "10px",
+              margin: "3px",
 
               color: "whitesmoke",
             }}
